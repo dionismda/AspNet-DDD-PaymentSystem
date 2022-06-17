@@ -1,4 +1,6 @@
-﻿using Shared.Entities;
+﻿using Flunt.Br.Extensions;
+using Flunt.Validations;
+using Shared.Entities;
 
 namespace Domain.Entities
 {
@@ -22,5 +24,22 @@ namespace Domain.Entities
         public string State { get; private set; }
         public string Country { get; private set; }
         public string ZipCode { get; private set; }
+
+        public override void Validate()
+        {
+            AddNotifications(
+                new Contract<Address>()
+                        .IsNotNullOrEmpty(Street, "Street")
+                            .IsGreaterOrEqualsThan(Street, 10, "Street")
+                        .IsNotNullOrEmpty(Number, "Number")
+                        .IsNotNullOrEmpty(Neighborhood, "Neighborhood")
+                            .IsGreaterOrEqualsThan(Neighborhood, 10, "Street")
+                        .IsNotNullOrEmpty(City, "City")
+                            .IsGreaterOrEqualsThan(City, 10, "Street")
+                        .IsNotNullOrEmpty(State, "State")
+                        .IsNotNullOrEmpty(Country, "Country")
+                        .IsNotNullOrEmpty(ZipCode, "ZipCode")
+            );
+        }
     }
 }

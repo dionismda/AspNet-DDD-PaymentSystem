@@ -1,4 +1,5 @@
 ﻿using Domain.ValueObjects;
+using Flunt.Validations;
 using Shared.Entities;
 
 namespace Domain.Entities
@@ -10,7 +11,7 @@ namespace Domain.Entities
         {
             Name = name;
             Document = document;
-            Email = email;
+            Email = email;            
 
             _subscriptions = new List<Subscription>();
         }
@@ -18,17 +19,39 @@ namespace Domain.Entities
         public Name Name { get; private set; }
         public Document Document { get; private set; }
         public Email Email { get; private set; }
-        public Address? Address { get; private set; }
+        public Address Address { get; private set; }
         public IReadOnlyCollection<Subscription> Subscriptions { get { return _subscriptions.ToArray(); } }
         public void AddSubscription(Subscription subscription)
         {
-            foreach (var sub in Subscriptions)
+            bool hasSubscriptionActive = false;
+            foreach (var sub in _subscriptions)
             {
-                sub.ToggleActive(false);
+                if (sub.Active)
+                {
+                    hasSubscriptionActive = true;
+                }                    
             }
 
-            _subscriptions.Add(subscription);
+            AddNotifications(
+                new Contract<Student>()
+                        .Requires()
+                        .IsFalse(hasSubscriptionActive, "Student.Subscriptions")
+            );
+
+            if (subscription.IsValid && IsValid)
+                _subscriptions.Add(subscription);
         }
 
+        public void AddAddress(Address address)
+        {
+            address.Validate();
+            
+            Address = address.IsValid ? address :  null;
+        }
+
+        public override void Validate()
+        {
+            AddNotifications(Name, Document, Email);
+        }
     }
 }

@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "K2FcloFEBIZBkizehrDkPT/kxmluWiUNqd+str+gAcgWsRJgP2xmNVziMdLa2q734/kcPjWNZMOxzs4Umy1nIg==",
+  "dgSpecHash": "WdLYK/JNtBxClKb5JzakqIKcOpDORt3e5PPajNDMEXzRlWbPyS1KuO09LgmWV/nVhT+QTtUAejW0zL51aLbOTw==",
   "success": true,
   "projectFilePath": "F:\\Balta\\AspNet+DDD+PaymentSystem\\Domain\\Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\programacao06\\.nuget\\packages\\flunt\\2.0.5\\flunt.2.0.5.nupkg.sha512",
+    "C:\\Users\\programacao06\\.nuget\\packages\\flunt.br\\2.0.0\\flunt.br.2.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

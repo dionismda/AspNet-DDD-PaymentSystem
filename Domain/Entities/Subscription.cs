@@ -1,6 +1,9 @@
-﻿namespace Domain.Entities
+﻿using Flunt.Validations;
+using Shared.Entities;
+
+namespace Domain.Entities
 {
-    public class Subscription
+    public class Subscription : BaseEntity
     {
         private IList<Payment> _payments;
         public Subscription(DateTime? expireDate = null)
@@ -20,7 +23,11 @@
         public IReadOnlyCollection<Payment> Payments { get { return _payments.ToArray(); } }
         public void AddPayment(Payment payment)
         {
-            _payments.Add(payment);
+            payment.Validate();
+            if (payment.IsValid)
+            {
+                _payments.Add(payment);
+            }            
         }
 
         public void ToggleActive(bool active)
@@ -29,5 +36,14 @@
             LastUpdateDate = DateTime.Now;
         }
 
+        public override void Validate()
+        {
+            AddNotifications(
+                new Contract<Subscription>()
+                        .Requires()
+                        .AreEquals(DateTime.Now, CreateDate, "CreateDate")
+                        .AreEquals(DateTime.Now, LastUpdateDate, "LastUpdateDate")
+            );
+        }
     }
 }

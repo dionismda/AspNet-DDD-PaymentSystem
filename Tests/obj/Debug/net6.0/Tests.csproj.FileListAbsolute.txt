@@ -101,3 +101,5 @@ F:\Balta\AspNet+DDD+PaymentSystem\Tests\obj\Debug\net6.0\Tests.dll
 F:\Balta\AspNet+DDD+PaymentSystem\Tests\obj\Debug\net6.0\ref\Tests.dll
 F:\Balta\AspNet+DDD+PaymentSystem\Tests\obj\Debug\net6.0\Tests.pdb
 F:\Balta\AspNet+DDD+PaymentSystem\Tests\obj\Debug\net6.0\Tests.genruntimeconfig.cache
+F:\Balta\AspNet+DDD+PaymentSystem\Tests\bin\Debug\net6.0\Flunt.dll
+F:\Balta\AspNet+DDD+PaymentSystem\Tests\bin\Debug\net6.0\Flunt.Br.dll
