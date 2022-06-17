@@ -1,0 +1,12 @@
+F:\Balta\AspNet+DDD+PaymentSystem\Shared\bin\Debug\net6.0\Shared.deps.json
+F:\Balta\AspNet+DDD+PaymentSystem\Shared\bin\Debug\net6.0\Shared.dll
+F:\Balta\AspNet+DDD+PaymentSystem\Shared\bin\Debug\net6.0\ref\Shared.dll
+F:\Balta\AspNet+DDD+PaymentSystem\Shared\bin\Debug\net6.0\Shared.pdb
+F:\Balta\AspNet+DDD+PaymentSystem\Shared\obj\Debug\net6.0\Shared.csproj.AssemblyReference.cache
+F:\Balta\AspNet+DDD+PaymentSystem\Shared\obj\Debug\net6.0\Shared.GeneratedMSBuildEditorConfig.editorconfig
+F:\Balta\AspNet+DDD+PaymentSystem\Shared\obj\Debug\net6.0\Shared.AssemblyInfoInputs.cache
+F:\Balta\AspNet+DDD+PaymentSystem\Shared\obj\Debug\net6.0\Shared.AssemblyInfo.cs
+F:\Balta\AspNet+DDD+PaymentSystem\Shared\obj\Debug\net6.0\Shared.csproj.CoreCompileInputs.cache
+F:\Balta\AspNet+DDD+PaymentSystem\Shared\obj\Debug\net6.0\Shared.dll
+F:\Balta\AspNet+DDD+PaymentSystem\Shared\obj\Debug\net6.0\ref\Shared.dll
+F:\Balta\AspNet+DDD+PaymentSystem\Shared\obj\Debug\net6.0\Shared.pdb

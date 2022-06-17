@@ -1,0 +1,15 @@
+F:\Balta\AspNet+DDD+PaymentSystem\Domain\bin\Debug\net6.0\Domain.deps.json
+F:\Balta\AspNet+DDD+PaymentSystem\Domain\bin\Debug\net6.0\Domain.dll
+F:\Balta\AspNet+DDD+PaymentSystem\Domain\bin\Debug\net6.0\ref\Domain.dll
+F:\Balta\AspNet+DDD+PaymentSystem\Domain\bin\Debug\net6.0\Domain.pdb
+F:\Balta\AspNet+DDD+PaymentSystem\Domain\bin\Debug\net6.0\Shared.dll
+F:\Balta\AspNet+DDD+PaymentSystem\Domain\bin\Debug\net6.0\Shared.pdb
+F:\Balta\AspNet+DDD+PaymentSystem\Domain\obj\Debug\net6.0\Domain.csproj.AssemblyReference.cache
+F:\Balta\AspNet+DDD+PaymentSystem\Domain\obj\Debug\net6.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+F:\Balta\AspNet+DDD+PaymentSystem\Domain\obj\Debug\net6.0\Domain.AssemblyInfoInputs.cache
+F:\Balta\AspNet+DDD+PaymentSystem\Domain\obj\Debug\net6.0\Domain.AssemblyInfo.cs
+F:\Balta\AspNet+DDD+PaymentSystem\Domain\obj\Debug\net6.0\Domain.csproj.CoreCompileInputs.cache
+F:\Balta\AspNet+DDD+PaymentSystem\Domain\obj\Debug\net6.0\Domain.csproj.CopyComplete
+F:\Balta\AspNet+DDD+PaymentSystem\Domain\obj\Debug\net6.0\Domain.dll
+F:\Balta\AspNet+DDD+PaymentSystem\Domain\obj\Debug\net6.0\ref\Domain.dll
+F:\Balta\AspNet+DDD+PaymentSystem\Domain\obj\Debug\net6.0\Domain.pdb
