@@ -21,7 +21,7 @@ namespace Domain.ValueObjects
                         .Requires()
                         .IsGreaterOrEqualsThan(FirstName, 3, "FirstName")
                             .IsLowerThan(FirstName, 40, "FirstName")
-                        .IsGreaterOrEqualsThan(LastName, 3, "FirstName")                        
+                        .IsGreaterOrEqualsThan(LastName, 3, "FirstName")
             );
         }
     }

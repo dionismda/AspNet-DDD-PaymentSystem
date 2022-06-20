@@ -27,7 +27,7 @@ namespace Domain.Entities
             if (payment.IsValid)
             {
                 _payments.Add(payment);
-            }            
+            }
         }
 
         public void ToggleActive(bool active)

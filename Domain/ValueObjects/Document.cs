@@ -24,7 +24,9 @@ namespace Domain.ValueObjects
                     new Contract()
                             .IsCpf(Number, "Number", "Invalid document")
                     );
-            } else {
+            }
+            else
+            {
                 AddNotifications(
                     new Contract()
                             .IsCnpj(Number, "Number", "Invalid document")

@@ -31,17 +31,18 @@ namespace Domain.Entities
 
         public override void Validate()
         {
+
+            AddNotifications(Document, Address, Email);
+
             AddNotifications(
                 new Contract<Payment>()
                         .Requires()
                         .IsGreaterThan(DateTime.Now, PaidDate, "PaidDate")
-                        .IsGreaterThan(0, Total, "Total")
+                        .IsGreaterThan(Total, 0, "Total")
                         .IsGreaterOrEqualsThan(Total, TotalPaid, "TotalPaid")
                         .IsGreaterThan(Payer.Length, 10, "Payer")
                         .AreEquals(Number.Length, 10, "Number")
             );
-
-            AddNotifications(Document, Address, Email);
         }
 
     }

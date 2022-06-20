@@ -1,10 +1,9 @@
 ﻿using Flunt.Notifications;
 using Shared.Interfaces;
-using Shared.ValueObjects;
 
 namespace Shared.Entities
 {
-    public abstract class BaseEntity : Notifiable<Notification>, INotifiableValidate<BaseValueObject>
+    public abstract class BaseEntity : Notifiable<Notification>, INotifiableValidate<BaseEntity>
     {
         public BaseEntity()
         {

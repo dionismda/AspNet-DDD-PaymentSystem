@@ -1,5 +1,4 @@
-﻿using Flunt.Br.Extensions;
-using Flunt.Validations;
+﻿using Flunt.Validations;
 using Shared.Entities;
 
 namespace Domain.Entities

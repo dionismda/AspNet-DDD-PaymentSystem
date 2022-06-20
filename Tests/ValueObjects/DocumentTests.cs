@@ -13,7 +13,7 @@ namespace Tests.ValueObjects
         {
             Document document = new Document(EDocumentType.CPF, "395.912.270-51");
             document.Validate();
-            Assert.AreEqual(document.IsValid, true);
+            Assert.IsTrue(document.IsValid);
         }
 
         [TestMethod]
@@ -22,7 +22,7 @@ namespace Tests.ValueObjects
         {
             Document document = new Document(EDocumentType.CPF, "39591227051");
             document.Validate();
-            Assert.AreEqual(document.IsValid, true);
+            Assert.IsTrue(document.IsValid);
         }
 
         [TestMethod]
@@ -31,7 +31,7 @@ namespace Tests.ValueObjects
         {
             Document document = new Document(EDocumentType.CPF, "39591227050");
             document.Validate();
-            Assert.AreEqual(document.IsValid, false);
+            Assert.IsFalse(document.IsValid);
         }
 
         [TestMethod]
@@ -40,7 +40,7 @@ namespace Tests.ValueObjects
         {
             Document document = new Document(EDocumentType.CNPJ, "89.761.929/0001-47");
             document.Validate();
-            Assert.AreEqual(document.IsValid, true);
+            Assert.IsTrue(document.IsValid);
         }
 
         [TestMethod]
@@ -49,7 +49,7 @@ namespace Tests.ValueObjects
         {
             Document document = new Document(EDocumentType.CNPJ, "89761929000147");
             document.Validate();
-            Assert.AreEqual(document.IsValid, true);
+            Assert.IsTrue(document.IsValid);
         }
 
         [TestMethod]
@@ -58,7 +58,7 @@ namespace Tests.ValueObjects
         {
             Document document = new Document(EDocumentType.CNPJ, "89761929000148");
             document.Validate();
-            Assert.AreEqual(document.IsValid, false);
+            Assert.IsFalse(document.IsValid);
         }
 
     }
